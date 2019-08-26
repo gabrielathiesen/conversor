@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title> Conversões </title>
+<script 	
+    src="./main.js"
+    src="./reset.css">
+    
+    var novaTabela = document.createElement("table");
+    var cabecalho = document.createElement("thead");
+var corpo = document.createElement("tbody");
+
+tabela.appendChild(cabecalho);
+tabela.appendChild(corpo);
+
+document.getElementById("test").appendChild(tabela);
+var container = document.getElementById("container");
+
+
+
+</script>
+</head>
+
+<body>
+
+    
+   T°C/5 = T°F-32/9 = T°K-273/5
+        
+
+
+
+
+<div id="container"></div>
+<form 	style="border: 1px double blue; background-color: #DDF;
+	padding: 4px;text-align:center;"
+	name="convert">
+
+Fahrenheit: <input 	type="text" 
+		name="ftemp" 
+		size="7"
+
+onchange="convertTemp('ftoc')">  Celsius:
+
+<input 	type="text" 
+	name="ctemp" 
+	size="7"
+
+onchange="convertTemp('ctof')">
+
+  Kelvin:
+
+<input 	type="text" 
+	name="ktemp" 
+	size="7"
+
+onchange="convertTemp('ktof')">
+
+<br /><br />
+<input 	type="button" 
+	value="limpar" 
+    onclick="clearAll();">
+    <input 	type="button" 
+	value="converter" 
+	onclick="clearAll();">
+</form>
+</body>
+</html>
